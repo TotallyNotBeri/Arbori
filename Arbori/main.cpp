@@ -124,6 +124,8 @@ bool isSibling(struct node* root, int a, int b) {
     }
     return direct || isSibling(root->left, a, b) || isSibling(root->right, a, b);
 }
+//ex 6
+//Un Arbore Avl este un arbore perfect, in care nici un nod nu are mai mult de 2 copii(in cazul meu frunze). Un B-tree , se refera la un arbore in care un nod poate avea zeci sau sute de copii(mic si gras).
 
 // --- Extra: ZigZag
 int globalMaxZZ = 0;
