@@ -4,7 +4,7 @@
 #include <cstring>
 #include <climits>
 
-// Folosim structura exact cum e in laborator [cite: 24, 66]
+// Folosim structura de baza
 struct node {
     int data;
     struct node *left;
@@ -125,7 +125,7 @@ bool isSibling(struct node* root, int a, int b) {
     return direct || isSibling(root->left, a, b) || isSibling(root->right, a, b);
 }
 
-// --- Ex Extra: ZigZag
+// --- Extra: ZigZag
 int globalMaxZZ = 0;
 void findZZ(struct node* n, bool goLeft, int len) {
     if (!n) return;
